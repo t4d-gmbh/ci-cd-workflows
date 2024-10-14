@@ -1,21 +1,9 @@
-# Web Course Template
+# CI/CD Workflows
 
-This is <img src="./source/_static/T4D_logo_bw.svg" alt="T4D" width="25" height="25">'s template for a web-based
-course/workshop content.
+<!-- include-before -->
 
-Feel free to use it as you please!
+This is a <img src="./source/_static/T4D_logo_bw.svg" alt="T4D" width="25" height="25"> course about Continuous Integration and Delivery for non-Software Developer.
 
-## Usage 🛠️
-
-You can simply [use this repository as a template](https://github.com/new?template_name=web-course-template&template_owner=t4d-gmbh) for your own project.
-Don't forget to star 🌟 the repository to show your support! Just click the ⭐-button at the top right of the page!
-By starring ⭐the repository you are helping it gain visibility making it easier for others to 🔍 discover it !
-
-The actual content of the web-based course resides under `./source/content` folder.
-There you find the content for the documentation of this template which should serve you both as 🧭 guideline and 💡 inspiration.
-
-
-<!-- include-upper -->
 
 ## Contributing 🤝🎉
 
