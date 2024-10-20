@@ -5,12 +5,12 @@
 ```{toctree}
 :maxdepth: 1
 
-./slide1
+./problem
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
 ### some sub title
-```{include} ./slide1.md
+```{include} ./problem.md
 ```
 {% endif %}
 
