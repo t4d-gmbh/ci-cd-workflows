@@ -3,7 +3,8 @@
 :caption: CI/CD Workflows
 
 why_automation/index
-workflow_structure/index
+yaml_primer/index
+creating_workflows/index
 runners/index
 embrace_automation/index
 exercise/index
