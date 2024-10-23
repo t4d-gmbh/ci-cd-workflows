@@ -1,7 +1,9 @@
 ## Why Automation is Useful for Non-Software Developers
 
-
-Automation offers significant advantages across various fields beyond software development, including scientific research, writing, data analysis, and project management. Here are some key benefits:
+{% if page %}
+Automation offers significant advantages across various fields beyond software development, including scientific research, writing, data analysis, and project management.
+Here are some key benefits:
+{% endif %}
 
 :::{card} Benefits
 1. **Increased Efficiency** 🚀: Automates repetitive tasks, allowing professionals to focus on strategic work and improving productivity.
@@ -68,5 +70,7 @@ Automation offers significant advantages across various fields beyond software d
 {% endif %}
 :::
 
-## Conclusion
+{% if page %}
+### Conclusion
 In summary, automation is not limited to software development; it provides substantial benefits across various non-software specific projects. By increasing efficiency, improving accuracy, enhancing collaboration, and ensuring reproducibility, automation empowers professionals to focus on high-value tasks, ultimately leading to better outcomes and greater competitiveness in their respective fields.
+{% endif %}

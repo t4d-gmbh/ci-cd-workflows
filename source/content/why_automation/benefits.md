@@ -1,7 +1,9 @@
 ## Why Offer **GitHub**, **GitLab**, etc. Automation?
 
+{% if page %}
 Offering automation remote services enable teams to work more efficiently, improve quality, and reduce risk.
 By automating repetitive tasks, teams can focus on more strategic work, ultimately enhancing overall productivity and competitiveness.
+{% endif %}
 
 :::{card} Benefits
 1. **Increased Efficiency** 🚀: Streamline repetitive tasks, allowing to focus on strategic work and speeding up the overall development process.
