@@ -10,10 +10,17 @@ YAML is extensively used in defining workflows and pipelines in both GitHub and 
 ./yaml_primer/index
 ./variable_syntax
 ./advanced_variable_syntax
+./conclusion
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
 ```{include} ./yaml_primer/index.md
+```
+```{include} ./yaml_primer/about_YAML.md
+```
+```{include} ./yaml_primer/syntax.md
+```
+```{include} ./yaml_primer/conclusion.md
 ```
 ```{include} ./variable_syntax.md
 ```
