@@ -4,7 +4,7 @@ from setuptools_scm import get_version
 # -- Configuration parameter -------------------------------------------------
 # ----------------------------------------------------------------------------
 repository_owner = "t4d-gmbh"
-repository_name = "web-course-template"
+repository_name = "ci-cd-workflows"
 repository_branch = "main"
 # -- optionally adat these
 repository_url = f"https://github.com/{repository_owner}/{repository_name}"
@@ -18,7 +18,7 @@ course_logo = {
     "favicon": "_static/T4D_logo_bw.svg",
 }
 # -- name your project
-project = 'Web Course Template'
+project = 'CI/CD Workflows'
 # -- provide authorship info
 author = 'Jonas Liechti - https://github.com/j-i-l'
 # -- optionally adapt copyright
