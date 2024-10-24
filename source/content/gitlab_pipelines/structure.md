@@ -1,4 +1,4 @@
-### <i class="fab fa-gitlab"></i> **GitLab** {octicon}`workflow` Pipelines
+## Example
 
 - **GitLab CI/CD**: In GitLab, pipelines are defined in a `.gitlab-ci.yml` file at the root of the repository. This file outlines the stages, jobs, and scripts to execute.
   ```yaml
