@@ -2,7 +2,7 @@
 :end-before: <!-- include-before -->
 ```
 ```{toctree}
-:maxdepth: 2
+:maxdepth: {% if build == "slides" %}1{% else %}4{% endif %}
 {% if build == "slides" %}:numbered:{% endif %}
 
 content/index
