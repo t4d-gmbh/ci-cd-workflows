@@ -5,11 +5,21 @@
 ```{toctree}
 :maxdepth: 1
 
-./slide1
+./about
+./configuration
+./interaction
+./security
+./reproducibility
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
-### some sub title
-```{include} ./slide1.md
+```{include} ./about.md
 ```
+```{include} ./configuration.md
+```
+```{include} ./interaction.md
+```
+```{include} ./security.md
+```
+```{include} ./reproducibility.md
 {% endif %}
