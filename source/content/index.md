@@ -3,7 +3,9 @@
 :caption: CI/CD Workflows
 
 why_automation/index
-workflow_structure/index
+creating_workflows/index
+github_workflows/index
+gitlab_pipelines/index
 runners/index
 embrace_automation/index
 exercise/index
