@@ -1,4 +1,4 @@
-## Overview
+### Overview
 {% raw %}
 A **pipeline** in GitLab is a series of automated steps that run jobs based on a configuration file. Pipelines are defined in a YAML file (`.gitlab-ci.yml`) located in your project and can be triggered by various events, scheduled to run at specific times, or started manually.
 

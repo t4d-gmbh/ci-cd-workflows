@@ -1,4 +1,4 @@
-### What is YAML
+### What is YAML?
 
 YAML (YAML Ain't Markup Language) is a **human-readable data serialization format**{% if page %} commonly used for configuration files and data exchange between languages with different data structures.
 Its simplicity and readability make it a popular choice for defining workflows in platforms like **GitHub** and **GitLab**.

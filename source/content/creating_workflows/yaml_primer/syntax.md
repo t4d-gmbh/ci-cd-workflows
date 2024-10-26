@@ -1,5 +1,12 @@
 ### YAML Syntax
 
+{% if page %}
+:::{tip}
+:class: margin
+We recommend [learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml/) for an extensive intro to YAML syntax.
+:::
+{% endif %}
+
 YAML syntax is designed to be **easy to read and write**.{% if page %} Here are some key elements of YAML syntax:{% endif %}
 
 {% if slide %}::::{grid}{% endif %}
@@ -34,7 +41,7 @@ YAML syntax is designed to be **easy to read and write**.{% if page %} Here are 
 ::::
 {% endif %}
 :::{admonition} Abbreviated forms
-:class: tip, margin
+:class: note, margin
 Lists and Dictionaries can be condensed:
 - `start = ["a", "b"]`
 - `user = {name: John, job: Developer}`
