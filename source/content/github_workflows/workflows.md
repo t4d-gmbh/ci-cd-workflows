@@ -1,33 +1,3 @@
-## Overview
-
-{% raw %}
-A **workflow** is a set of automated steps that perform tasks in your project. Workflows are defined using YAML files and can be triggered automatically by specific events, manually, or on a scheduled basis.
-
-## Key Components of Workflows
-
-- **Location**: Workflows are stored in the `.github/workflows` directory of your project.
-- **Multiple Workflows**: You can define multiple workflows in a project to handle different tasks. For example:
-  - **Building and testing code** for each pull request submission.
-  - **Deploying your application** when a new version is released.
-  - **Automating issue management** by adding labels to new issues.
-
-## Workflow Basics
-
-A GitHub Actions workflow includes the following core elements:
-
-- **Triggers**: These are events that initiate the workflow, such as pushing code, opening a pull request, or creating an issue.
-- **Jobs**: Each job is a collection of tasks that runs on a virtual machine (runner). A job consists of multiple steps.
-- **Steps**: Individual commands or actions executed as part of a job. Steps can either run shell commands or use pre-built GitHub Actions to perform specific tasks.
-
-## Triggering a Workflow
-
-Workflows in GitHub Actions can be triggered by:
-
-- **Project events**: Actions like commits, pull requests, or issue creation.
-- **External events**: Webhooks or APIs that signal GitHub to start a workflow.
-- **Scheduled times**: Set workflows to run at regular intervals (e.g., nightly builds using cron syntax).
-- **Manual triggers**: Start a workflow manually from the GitHub UI.
-
 ## Workflow Syntax
 
 - Workflows are written in **YAML**, with a simple structure that defines jobs, steps, and their respective commands.  
@@ -43,6 +13,7 @@ Workflows in GitHub Actions can be triggered by:
 
 ## Advanced Workflow Features
 
+{% raw %}
 - **Storing Secrets**: Use **GitHub Secrets** to securely store sensitive information, like API keys or credentials. Secrets are encrypted and only available at runtime.
 
   ```yaml

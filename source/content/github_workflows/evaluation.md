@@ -31,6 +31,22 @@ jobs:
         run: echo "Repository: ${{ github.repository }}"
 ```
 
+:::{admonition} Inspect the `github` context variable
+:class: tip
+```yaml
+jobs:
+  list-github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub Context Variables
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: |
+          echo "GitHub context variables:"
+          echo "$GITHUB_CONTEXT" | jq '.'
+```
+:::
+
 #### **Environment Variables (`env`)**
 - **`${{ env }}`**: User-defined environment variables set at the workflow, job, or step level. Referenced using `${{ env.VAR_NAME }}`.
 - Evaluated during the job or step where they are used.

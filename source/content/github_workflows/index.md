@@ -5,15 +5,21 @@
 ```{toctree}
 :maxdepth: 1
 
+./example
+./defining
+./elements
 ./workflows
-./structure
 ./evaluation
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
-```{include} ./workflows.md
+```{include} ./example.md
 ```
-```{include} ./structure.md
+```{include} ./defining.md
+```
+```{include} ./elements.md
+```
+```{include} ./workflows.md
 ```
 ```{include} ./evaluation.md
 ```
