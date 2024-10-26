@@ -30,10 +30,17 @@ YAML syntax is designed to be **easy to read and write**.{% if page %} Here are 
     A multiline string.
     Retains line breaks.
   ```
-{% if slide %}:::{% endif %}
-{% if slide %}::::
-::::{grid}{% endif %}
-{% if slide %}:::{grid-item-card}{% else %}#### 2.{% endif %} Lists
+{% if slide %}:::
+::::
+{% endif %}
+:::{admonition} Abbreviated forms
+:class: tip, margin
+Lists and Dictionaries can be condensed:
+- `start = ["a", "b"]`
+- `user = {name: John, job: Developer}`
+:::
+{% if slide %}::::{grid}
+:::{grid-item-card}{% else %}#### 2.{% endif %} Lists
 {% if page %}- **Lists**: Lists are created using a hyphen followed by a space.{% endif %}
   ```yaml
   fruits:
