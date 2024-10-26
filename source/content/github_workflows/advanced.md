@@ -1,4 +1,54 @@
-### Advanced Worklfow Features
+### Advanced Features
+
+{% if slide %}- {% else %}:::{card}{% endif %} **`{%raw%}${{...}}{%endraw%}` Context Variables**{% if page %}:
+
+As the name suggests, context variables hold contextual information and vary significantly under different running conditions.
+
+Some important contextual variables are:
+
+- **`github`**: Provides metadata about the Workflow run, repository, and event that triggered the workflow.
+- **`vars`**: Contains variables definded on Repository, Organization or Environment level.
+- **`secrets`**: Names and values of available secrets.
+
+Refer to the official documentation for a [complete overview of **GitHub**'s contextual variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs) and [their availabilities](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#context-availability).
+
+:::{admonition} Inspect context variables
+:class: tip
+
+{% raw %}
+```yaml
+jobs:
+  list-github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print GitHub Context Variables
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: |
+          echo "GitHub context variables:"
+          echo "$GITHUB_CONTEXT" | jq '.'
+```
+{% endraw %}
+:::
+:::{% endif %}
+
+{% if slide %}- {% else %}:::{card}{% endif %} **Expression Evaluation**{% if page %}:
+
+**GitHub** allows to [evaluate expressions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions) in the {%raw%}`${{...}}`{%endraw%} syntax.
+
+{% raw %}
+```yaml
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set a message based on event type
+        run: |
+          MESSAGE="${{ github.event_name == 'push' && 'This is a push event!' || 'This is not a push event.' }}"
+          echo $MESSAGE
+```
+{% endraw %}
+:::{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Workflow Templates**{% if page %}:
 
@@ -8,6 +58,7 @@
   - Deploying applications to various hosting services.
   - Scanning for security vulnerabilities or code quality issues.
 :::{% endif %}
+
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Storing Secrets**{% if page %}:
 
@@ -144,11 +195,6 @@ Use reusable workflows to call another workflow from within a workflow, reducing
         param1: value1
   ```
 {% endraw %}
-:::{% endif %}
-
-{% if slide %}- {% else %}:::{card}{% endif %} **Security Hardening**{% if page %}:
-
-GitHub provides tools such as **dependabot**, which scans dependencies for vulnerabilities and suggests updates to keep your workflow secure.
 :::{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Environments**{% if page %}:
