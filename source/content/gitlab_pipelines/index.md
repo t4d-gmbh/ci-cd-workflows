@@ -6,12 +6,15 @@
 :maxdepth: 1
 
 ./example
+./defining
 ./workflows
 ./evaluation
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
 ```{include} ./example.md
+```
+```{include} ./defining.md
 ```
 ```{include} ./workflows.md
 ```
