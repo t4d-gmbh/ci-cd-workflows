@@ -1,4 +1,4 @@
-## <i class="fab fa-gitlab"></i> **GitLab** {octicon}`workflow` Pipelines
+## <i class="fab fa-gitlab"></i> **GitLab** {material-outlined}`account_tree` Pipelines
 
 {% if build == "slides" %}
 <!-- BUILDING THE SLIDES -->
@@ -7,7 +7,8 @@
 
 ./example
 ./defining
-./workflows
+./elements
+./advanced
 ./evaluation
 ```
 {% else %}
@@ -16,7 +17,9 @@
 ```
 ```{include} ./defining.md
 ```
-```{include} ./workflows.md
+```{include} ./elements.md
+```
+```{include} ./advanced.md
 ```
 ```{include} ./evaluation.md
 ```
