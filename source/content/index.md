@@ -6,6 +6,7 @@ why_automation/index
 creating_workflows/index
 github_workflows/index
 gitlab_pipelines/index
+differences
 runners/index
 embrace_automation/index
 exercise/index
