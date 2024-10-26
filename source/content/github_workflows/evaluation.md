@@ -127,14 +127,3 @@ jobs:
 ```
 {% endraw %}
 {% endif %}
-
----
-
-#### Key Points:
-- **When are GitHub variables evaluated?**  
-  Variables like `github.*` are evaluated **before each job starts** based on the event context.
-  
-- **When are environment variables evaluated?**  
-  Environment variables (`env`) and step-specific outputs are evaluated **when a job or step starts running**.
-
-In summary, GitHub evaluates a workflow file by parsing the structure, reacting to triggers, and evaluating variables and expressions at different stages of the workflow, ensuring dynamic values are injected at the appropriate time.

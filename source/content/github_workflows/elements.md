@@ -2,8 +2,8 @@
 
 A **GitHub** Workflow must include at least the following core elements:
 
-:::{admonition}
-:class: note, margin
+:::{note}
+:class:margin
 **GitHub** provides [a comprehensive overview](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions) of all top-level keys and their purpose.
 :::
 
