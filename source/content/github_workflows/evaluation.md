@@ -1,7 +1,8 @@
-## {octicon}`workflow` Workflow Evaluation
-{% raw %}
+### {octicon}`workflow` Workflow Evaluation
 
-GitHub evaluates a workflow file (`.yml`) in GitHub Actions by interpreting the structure and content of the YAML file, including how variables and environment settings are managed during the workflow execution. Here’s an overview:
+{% if page %}
+GitHub evaluates a workflow file (`.yml`) by interpreting the structure and content of the YAML file, including variables and environment settings during the workflow execution:
+{% endif %}
 
 ### 1. **Parsing and Loading the Workflow File**
 - GitHub reads and parses the workflow file located in `.github/workflows/`.
@@ -15,6 +16,7 @@ GitHub evaluates a workflow file (`.yml`) in GitHub Actions by interpreting the 
 #### **Predefined GitHub Variables** <i class="fa fa-github"></i>
 These variables are scoped to the workflow and depend on the repository and event context:
 
+{% raw %}
 - **`${{ github }}`**: Provides metadata about the repository and the event.
   - `${{ github.repository }}`: Repository name (e.g., `user/repo`).
   - `${{ github.actor }}`: The username of the actor triggering the workflow.

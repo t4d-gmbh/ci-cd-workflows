@@ -8,7 +8,7 @@
 ./example
 ./defining
 ./elements
-./workflows
+./advanced
 ./evaluation
 ```
 {% else %}
@@ -19,7 +19,7 @@
 ```
 ```{include} ./elements.md
 ```
-```{include} ./workflows.md
+```{include} ./advanced.md
 ```
 ```{include} ./evaluation.md
 ```
