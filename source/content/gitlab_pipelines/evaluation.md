@@ -1,155 +1,80 @@
-## {octicon}`workflow` Workflow Evaluation
+### Evaluation
+
+{% if page %}
+**GitLab** evaluates a CI/CD configuration file (`.gitlab-ci.yml`) by interpreting the structure and content of the YAML file, including variables and environment settings during the pipeline execution:
+{% endif %}
+
+{% if page %}####{% endif %} 1. **Parsing and Loading the Configuration File**
+{% if page %}
+- GitLab reads and parses the configuration file located in the root of the repository.
+- The file is structured in YAML and specifies stages, jobs, and scripts.
+{% endif %}
+
+{% if page %}####{% endif %} 2. **Triggering Events**
+{% if page %}
+- The Pipeline can be triggered [by various events](https://docs.gitlab.com/ee/ci/jobs/job_rules.html#ci_pipeline_source-predefined-variable) (e.g., `push`, `schedule`).
+- Once an event occurs, the pipeline begins, and variables like `CI_*` and environment variables start being evaluated.
+{% endif %}
+
+{% if page %}####{% endif %} 3. **Evaluating Pipeline Variables**
+{% if page %}
+When exactly variables are evaluated depends on the variable and where it is defined.
+Generally, **GitLab** know three evaluation levels:
+
+- **GitLab Server**
+- **Runner**
+- **Execution Shell**
+
+Refer to the official documentation to learn more about [when variables are evalueated](https://docs.gitlab.com/ee/ci/variables/where_variables_can_be_used.html#expansion-mechanisms).
+{% endif %}
+  
+{% if page %}####{% endif %} 4. **Evaluating Pipeline Expressions**
+   {% if page %}
+   {% raw %}
+   GitLab CI/CD allows logic with expressions inside `rules` and `only/except`.
+   
+   - `if: '$CI_COMMIT_BRANCH == "main"'`: Evaluates if the branch is `main`.
+   - `when: on_success`: Specifies when to run a job based on the success of previous jobs.
+   {% endraw %}
+   
+   Expressions are evaluated **just before a job runs**.
+   
+   {% raw %}
+   ```yaml
+   job_name:
+     script:
+       - echo "This job runs only on the main branch"
+     rules:
+       - if: '$CI_COMMIT_BRANCH == "main"'
+   ```
+   {% endraw %}
+   {% endif %}
+
+{% if page %}####{% endif %} 5. **Execution of Jobs**
+{% if page %}
+{% raw %}
+- Jobs execute on GitLab runners, which can be shared or specific to your project.
+- Some variables are evaluated **just before each job starts**.
+{% endraw %}
+{% endif %}
+
+{% if page %}####{% endif %} 6. **Evaluating On-the-Fly Variables**
+{% if page %}
+Variables generated as part of a job (e.g., job artifacts) are evaluated once they are produced and can be referenced by subsequent jobs.
 
 {% raw %}
-
-GitLab evaluates a pipeline file (`.gitlab-ci.yml`) in a similar way to GitHub Actions, by parsing the YAML file structure and executing jobs based on predefined rules and stages. Here’s an overview:
-
-### 1. **Parsing and Loading the Pipeline File**
-- GitLab reads the `.gitlab-ci.yml` file in the root of the repository.
-- The YAML structure defines stages, jobs, scripts, and rules for when and how to execute them.
-
-### 2. **Pipeline Triggering**
-- Pipelines are triggered based on specific events, such as commits, merges, or schedules.
-- The `only` and `except` keywords define when a job runs, based on branches, tags, or specific pipeline triggers.
-
-### 3. **Evaluating Variables**
-GitLab uses different types of variables within the pipeline, including predefined, user-defined, and environment variables.
-
-#### **Predefined GitLab Variables**
-GitLab provides a set of predefined variables that contain information about the repository, pipeline, and job context. These variables are available during pipeline execution:
-
-- **`CI_PROJECT_NAME`**: The project’s name (e.g., `my-repo`).
-- **`CI_COMMIT_REF_NAME`**: The branch or tag name for which the pipeline runs.
-- **`CI_JOB_STAGE`**: The stage the job is running in.
-
-These variables are evaluated based on the repository state **at the time of the pipeline trigger**.
-
 ```yaml
-stages:
-  - build
-
-build-job:
-  stage: build
+job1:
   script:
-    - echo "Project: $CI_PROJECT_NAME"
-    - echo "Branch: $CI_COMMIT_REF_NAME"
-```
-
-#### **User-Defined Variables**
-- You can define custom variables at different levels: in the `.gitlab-ci.yml` file, in the GitLab project or group settings, or during pipeline runtime.
-- These variables are referenced in jobs using `$VARIABLE_NAME`.
-
-```yaml
-variables:
-  MY_CUSTOM_VAR: "Hello from GitLab"
-
-stages:
-  - test
-
-test-job:
-  stage: test
-  script:
-    - echo $MY_CUSTOM_VAR
-```
-
-#### **Environment Variables**
-- **Environment variables** are defined either at the job level or globally for all jobs.
-- They can also be defined in the GitLab UI under project or group settings.
-
-```yaml
-job_with_env:
-  stage: test
-  script:
-    - echo "Running on environment: $MY_ENV"
-  environment:
-    name: production
-```
-
-### 4. **Evaluating Job Conditions and Rules**
-GitLab allows jobs to be conditionally executed based on rules or conditions. These conditions can be defined with:
-
-- **`only` / `except`**: Specifies which branches, tags, or conditions to include or exclude.
-- **`rules`**: Allows more complex conditions based on expressions, variables, and more.
-
-```yaml
-stages:
-  - deploy
-
-deploy-job:
-  stage: deploy
-  script:
-    - echo "Deploying..."
-  only:
-    - main
-```
-
-#### **Using `rules` for Conditional Execution**
-You can use `rules` for more complex logic to define when a job should run:
-
-```yaml
-deploy-job:
-  stage: deploy
-  script:
-    - echo "Deploying..."
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
-    - if: '$CI_COMMIT_TAG'
-```
-
-### 5. **Stages and Job Execution**
-- Jobs are grouped into **stages**. All jobs in a stage must complete successfully before the next stage starts.
-- Variables are evaluated when the job begins execution.
-
-```yaml
-stages:
-  - build
-  - test
-  - deploy
-
-build-job:
-  stage: build
-  script:
-    - echo "Building..."
-
-test-job:
-  stage: test
-  script:
-    - echo "Testing..."
-
-deploy-job:
-  stage: deploy
-  script:
-    - echo "Deploying..."
-```
-
-### 6. **Secrets and Secure Variables**
-- GitLab provides a **CI/CD variables** section in the project settings where you can store secure values (e.g., tokens, API keys).
-- These values can be injected into the pipeline using `$VARIABLE_NAME`.
-
-```yaml
-deploy-job:
-  stage: deploy
-  script:
-    - echo "Deploying to server"
-    - scp -i $DEPLOY_KEY app user@server:/path/to/deploy
-  environment:
-    name: production
-```
-
-### 7. **Using Job Artifacts and Dependencies**
-- **Artifacts**: Files generated by a job that can be passed to later jobs.
-- **Dependencies**: Jobs can pass outputs to subsequent jobs using artifacts.
-
-```yaml
-build-job:
-  stage: build
-  script:
-    - make build
+    - echo "result=success" >> job_output.txt
   artifacts:
-    paths:
-      - build/
+    reports:
+      dotenv: job_output.txt
 
-test-job:
-  stage: test
+job2:
+  script:
+    - echo "The result is $RESULT"
 ```
 {% endraw %}
+{% endif %}
+

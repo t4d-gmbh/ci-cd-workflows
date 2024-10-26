@@ -1,6 +1,6 @@
 # Creating CI/CD Scripts
 
-YAML is extensively used in defining workflows and pipelines in both GitHub and GitLab:
+Both <i class="fab fa-github"></i> **GitHub** and <i class="fab fa-gitlab"></i> **GitLab** use [YAML](https://yaml.org/) to define CI/CD scripts.
 
 {% if build == "slides" %}
 <!-- BUILDING THE SLIDES -->
@@ -8,9 +8,9 @@ YAML is extensively used in defining workflows and pipelines in both GitHub and 
 :maxdepth: 1
 
 ./yaml_primer/index
-./variable_syntax
-./advanced_variable_syntax
-./conclusion
+./using_variables
+./github/index
+./gitlab/index
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
@@ -22,12 +22,6 @@ YAML is extensively used in defining workflows and pipelines in both GitHub and 
 ```
 ```{include} ./yaml_primer/conclusion.md
 ```
-```{include} ./variable_syntax.md
-```
-```{include} ./advanced_variable_syntax.md
-```
-```{include} ./github/index.md
-```
-```{include} ./gitlab/index.md
+```{include} ./using_variables.md
 ```
 {% endif %}

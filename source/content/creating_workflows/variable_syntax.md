@@ -1,6 +1,5 @@
-## Understanding Variable Syntax in YAML Files
-
 {% raw %}
+
 ### Overview of `$` and `${{ ... }}` Syntax
 
 In YAML files used for CI/CD workflows (like GitHub Actions and GitLab CI/CD), the `$` and `${{ ... }}` syntax is essential for referencing variables, secrets, and context information.
