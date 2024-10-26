@@ -1,52 +1,53 @@
 ### YAML Syntax
 
-YAML syntax is designed to be easy to read and write. Here are some key elements of YAML syntax:
+YAML syntax is designed to be **easy to read and write**.{% if page %} Here are some key elements of YAML syntax:{% endif %}
 
-#### 1. Basic Structure
+{% if slide %}::::{grid}{% endif %}
+{% if slide %}:::{grid-item-card}{% else %}#### 1.{% endif %} Basic Structure
 
-- **Key-Value Pairs**: YAML uses a simple key-value pair structure, where keys are followed by a colon and a space.
+- **Key-Value Pairs**: {% if page %}YAML uses a simple key-value pair structure, where keys are followed by a colon and a space.{% endif %}
   ```yaml
   name: John Doe
   age: 30
   ```
 
-- **Nested Structures**: Indentation (using spaces, not tabs) is used to represent nested data.
+- **Nested Structures**: {% if page %}Indentation (using spaces, not tabs) is used to represent nested data.{% endif %}
   ```yaml
   person:
     name: John Doe
     age: 30
   ```
-
-#### 2. Lists
-
-- **Lists**: Lists are created using a hyphen followed by a space.
+{% if slide %}:::{% endif %}
+{% if slide %}:::{grid-item-card}{% else %}#### 3.{% endif %} Strings
+- **String Formatting**:{% if page %} Strings can be written in plain format, or enclosed in quotes (single or double).{% endif %}
+  ```yaml
+  greeting: "Hello, World!"
+  farewell: 'Goodbye!'
+  ```
+- **Multiline Strings**:{% if page %} Use the pipe (`|`) for multiline strings, preserving line breaks.{% endif %}
+  ```yaml
+  descr: |
+    A multiline string.
+    Retains line breaks.
+  ```
+{% if slide %}:::{% endif %}
+{% if slide %}::::
+::::{grid}{% endif %}
+{% if slide %}:::{grid-item-card}{% else %}#### 2.{% endif %} Lists
+{% if page %}- **Lists**: Lists are created using a hyphen followed by a space.{% endif %}
   ```yaml
   fruits:
     - Apple
     - Banana
     - Cherry
   ```
-
-#### 3. Strings
-
-- **String Formatting**: Strings can be written in plain format, or enclosed in quotes (single or double).
+{% if slide %}:::{% endif %}
+{% if slide %}:::{grid-item-card}{% else %}#### 4.{% endif %} Comments
+{% if page %}- **Comments**: Comments start with a `#` and continue to the end of the line.{% endif %}
   ```yaml
-  greeting: "Hello, World!"
-  farewell: 'Goodbye!'
+  # A comment
+  name: John Doe  # Also a comment
   ```
-
-- **Multiline Strings**: Use the pipe (`|`) for multiline strings, preserving line breaks.
-  ```yaml
-  description: |
-    This is a multiline string.
-    It retains line breaks.
-  ```
-
-#### 4. Comments
-
-- **Comments**: Comments start with a `#` and continue to the end of the line.
-  ```yaml
-  # This is a comment
-  name: John Doe  # This is also a comment
-  ```
+{% if slide %}:::{% endif %}
+{% if slide %}::::{% endif %}
 
