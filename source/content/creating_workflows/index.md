@@ -7,6 +7,7 @@ Both <i class="fab fa-github"></i> **GitHub** and <i class="fab fa-gitlab"></i> 
 
 ./yaml_primer/index
 ./using_variables
+./from_yaml_to_action
 ./github_workflows/index
 ./gitlab_pipelines/index
 ./overview
