@@ -9,7 +9,8 @@ Some important contextual variables are:
   These variables [can be set via the Web-UI](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#defining-variables-for-multiple-workflows).
 :::{warning}
 :class: margin
-**`secrets` is the only acceptable place to store sensitive data!**
+Sensitive data should be stored outside of **GitHub**!
+**`secrets` is the only half-way acceptable place to store sensitive data!**
 :::
 - [**`secrets`**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#secrets-context): Names and values of secrets that were defined for the Repository, Organization or Environment.
   Secrets are treated [in a particular way](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) by **GitHub** and can be set via the Web-UI.
