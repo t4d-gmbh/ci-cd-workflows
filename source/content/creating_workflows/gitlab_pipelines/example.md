@@ -1,21 +1,15 @@
-### Example
+### Minimal Automation Script
 
-
-{% if page %}An exemplary <i class="fab fa-gitlab"></i> Pipeline file could look like this:{% endif %}
+{% if page %}An minimal exemplary <i class="fab fa-gitlab"></i> Pipeline file could look like this:{% endif %}
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
-  - build
-  - test
+  - greet
 
-build_job:
-  stage: build
+greet_job:
+  stage: greet
   script:
-    - echo "Building the project..."
-
-test_job:
-  stage: test
-  script:
-    - echo "Running tests..."
+    - echo "Hello, World!"
 ```
