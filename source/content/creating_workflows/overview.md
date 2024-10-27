@@ -1,6 +1,6 @@
-## Differences between <i class="fab fa-github"></i> Workflows and <i class="fab fa-github"></i>  Pipelines
+## Overview <i class="fab fa-github"></i> Workflows & <i class="fab fa-gitlab"></i>  Pipelines
 
-| Feature                     | <i class="fab fa-github"></i> Workflows                          | <i class="fab fa-github"></i>  Pipelines                          |
+| Feature                     | <i class="fab fa-github"></i> Workflows                          | <i class="fab fa-gitlab"></i>  Pipelines                          |
 |-----------------------------|------------------------------------------|-------------------------------------------|
 | **Definition Location**      | Jobs are defined under the `jobs` key   | Jobs are defined as top-level keys        |
 | **Job Structure**           | Each job contains a list of `steps`     | Each job has a single `script` key that can take a list of CLI commands |
