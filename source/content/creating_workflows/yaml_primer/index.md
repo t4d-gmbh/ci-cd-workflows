@@ -10,5 +10,10 @@
 ./conclusion
 ```
 {% else %}
-<!-- content is imported one level above -->
+```{include} ./about_YAML.md
+```
+```{include} ./syntax.md
+```
+```{include} ./conclusion.md
+```
 {% endif %}
