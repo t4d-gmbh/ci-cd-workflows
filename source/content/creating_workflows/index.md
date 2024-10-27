@@ -11,4 +11,5 @@ Both <i class="fab fa-github"></i> **GitHub** and <i class="fab fa-gitlab"></i> 
 ./github_workflows/index
 ./gitlab_pipelines/index
 ./overview
+./examples
 ```

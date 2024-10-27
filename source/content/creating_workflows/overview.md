@@ -1,14 +1,9 @@
-## Overview <i class="fab fa-github"></i> Workflows & <i class="fab fa-gitlab"></i>  Pipelines
+## <i class="fab fa-github"></i> Workflows vs. <i class="fab fa-gitlab"></i> Pipelines - Overview
 
 | Feature                     | <i class="fab fa-github"></i> Workflows                          | <i class="fab fa-gitlab"></i>  Pipelines                          |
-|-----------------------------|------------------------------------------|-------------------------------------------|
-| **Definition Location**      | Jobs are defined under the `jobs` key   | Jobs are defined as top-level keys        |
-| **Job Structure**           | Each job contains a list of `steps`     | Each job has a single `script` key that can take a list of CLI commands |
-| **Triggers**                | Uses `on` to specify events (e.g., push, pull request) | Uses `only`, `except`, or `rules` to specify when jobs run |
-| **Environment Variables**   | Defined in `env` at job or workflow level | Defined in `variables` at job or pipeline level |
-| **Matrix Builds**           | Supports matrix builds using `strategy` | Supports matrix builds using `parallel` |
-| **Artifacts**               | Artifacts are defined in `jobs` using `artifacts` key | Artifacts are defined in `artifacts` key within jobs |
-| **Caching**                 | Caching is defined in `jobs` using `cache` key | Caching is defined in `cache` key within jobs |
-| **Conditional Execution**   | Uses `if` condition for job execution    | Uses `rules` or `only/except` for job execution |
-| **UI Integration**          | Integrated with GitHub Actions UI       | Integrated with GitLab CI/CD UI          |
-| **YAML File Location**      | `.github/workflows/` directory           | `.gitlab-ci.yml` file in the root directory |
+|-----------------------------|------------------------------------------------------------------|-------------------------------------------|
+| **Location**                | Any `.yml` file in `.github/workflows/` | `.gitlab-ci.yml` in the root directory |
+| **Mandatory Keys**          | <ul><li>`on`: determine when to be triggered</li><li> `jobs`: a set of jobs</li><li>`jobs.<job_name>.steps`: a list of tasks to run</li></ul>  | <ul><li>`<job_name>`: defining a job</li><li>`<job_name>.script`: list of shell commands</li></ul> |
+| **Triggers**                | <ul><li>Uses top-level `on` key to trigger Workflow</li><li>Job-level `if` key to skip jobs</li></ul> | <ul><li>Uses `workflow.rules` key to trigger Pipeline</li><li>Job-level `rules` key to trigger jobs</li></ul> |
+| **Variables**               | Defined in `env` at job or Workflow level | Defined in `variables` at job or Pipeline level |
+| **Environment Variables**   | Provides "context variables" including `vars` and `secrets` defined via Web-UI | Provides predefined variables & custom variables defined via Web-UI |
