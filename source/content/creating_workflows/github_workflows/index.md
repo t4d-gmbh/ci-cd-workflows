@@ -14,7 +14,6 @@ _Or at least how to get started..._
 ./example
 ./triggers
 ./variables
-./advanced
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
@@ -27,7 +26,5 @@ _Or at least how to get started..._
 ```{include} ./triggers.md
 ```
 ```{include} ./variables.md
-```
-```{include} ./advanced.md
 ```
 {% endif %}
