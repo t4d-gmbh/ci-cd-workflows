@@ -1,19 +1,18 @@
-### Example
+### Minimal Automation Script
 
-{% if page %}An exemplary <i class="fab fa-github"></i> Workflow file could look like this:{% endif %}
+{% if page %}An minimal exemplary <i class="fab fa-github"></i> Workflow file could look like this:{% endif %}
 
 ```yaml
-# .github/workflows/example.yml
-name: CI
+# .github/workflows/hello_world.yml
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  say_hello:
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Run tests
-        run: npm test
+      - uses: actions/checkout@v2
+      - run: echo "Hello, World!"
 ```

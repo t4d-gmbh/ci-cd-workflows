@@ -32,6 +32,31 @@ jobs:
 :::
 :::{% endif %}
 
+{% if slide %}- {% else %}:::{card}{% endif %} **On-the-Fly Variables**{% if page %}
+Variables can be generated as part of a Workflow (e.g., step or job outputs) can be referenced by other steps.
+
+{% raw %}
+```yaml
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ steps.mystep.outputs.test }}
+    steps:
+      - id: mystep
+        run: echo "test=hello" >> "$GITHUB_OUTPUT"
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    steps:
+      - env:
+          OUTPUT1: ${{needs.job1.outputs.output1}}
+        run: echo "$OUTPUT1"
+```
+{% endraw %}
+:::
+{% endif %}
+
 {% if slide %}- {% else %}:::{card}{% endif %} **Expression Evaluation**{% if page %}:
 
 **GitHub** allows to [evaluate expressions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions) in the {%raw%}`${{...}}`{%endraw%} syntax.
