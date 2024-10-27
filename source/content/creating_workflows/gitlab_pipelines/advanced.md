@@ -1,4 +1,4 @@
-### Advanced Features
+### Some Advanced Features
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Pipeline Triggers**{% if page %}:
 

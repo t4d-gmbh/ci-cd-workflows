@@ -1,4 +1,4 @@
-### Advanced Features
+### Some Advanced Features
 
 {% if slide %}- {% else %}:::{card}{% endif %} **`{%raw%}${{...}}{%endraw%}` Context Variables**{% if page %}:
 
