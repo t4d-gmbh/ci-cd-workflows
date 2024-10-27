@@ -5,7 +5,11 @@
 ```{toctree}
 :maxdepth: 1
 
-./about
+./what_are_runners
+./runner_types
+./configuring_runners
+./communication_with_remote
+./some_considerations
 ./configuration
 ./interaction
 ./security
@@ -13,7 +17,15 @@
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
-```{include} ./about.md
+```{include} ./what_are_runners.md
+```
+```{include} ./runner_types.md
+```
+```{include} ./configuring_runners.md
+```
+```{include} ./communication_with_remote.md
+```
+```{include} ./some_considerations.md
 ```
 ```{include} ./configuration.md
 ```
@@ -22,4 +34,5 @@
 ```{include} ./security.md
 ```
 ```{include} ./reproducibility.md
+```
 {% endif %}
