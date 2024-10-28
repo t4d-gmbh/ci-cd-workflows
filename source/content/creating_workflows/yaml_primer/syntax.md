@@ -17,7 +17,9 @@ Here are some key elements of YAML syntax:
   age: 30
   ```
 
-- **Nested Structures**: {% if page %}Indentation (using spaces, not tabs) is used to represent nested data.{% endif %}
+- **Nested Structures**: {% if page %}Indentation (using spaces, not tabs [^sn1]) is used to represent nested data.
+[^sn1]: Using spaces for indentation ensures consistency across different editors and environments, as tabs can be displayed differently depending on the settings of the text editor or IDE. For example, one editor might display a tab as four spaces wide, while another might display it as eight spaces wide. This inconsistency can lead to misaligned code, making it harder to read and maintain.
+{% endif %}
   ```yaml
   person:
     name: John Doe
