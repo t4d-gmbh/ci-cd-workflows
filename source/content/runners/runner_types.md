@@ -8,7 +8,7 @@ _Read more about [Instance Runners](https://docs.gitlab.com/ee/ci/runners/runner
 :::
 {% if slide %}
 :::{card} Remote Hosted Runners <i class="fab fa-gitlab"></i>&<i class="fab fa-github"></i>
-Provided and maintained runners available to all users and projects.
+Provided and maintained by the remote service.
 
 A certain amount of minutes or particular runner sizes might be free of charge.
 
@@ -19,7 +19,9 @@ Public Repostiries can use lightweight runners on **GitHub** without any runtime
 ```
 :::
 :::{card} Self-Hosted Runners <i class="fab fa-gitlab"></i>&<i class="fab fa-github"></i>
-   Self-hosted runners are virtual or physical machines **configured by the user** and registered at the remote service.
+Virtual or physical machines **configured by the user** and registered at the remote service.
+
+Can run as a service.
 
 Self-hosted runners can be dedicated to <i class="fab fa-gitlab"></i> Projects or <i class="fab fa-github"></i> Repositories or shared accross <i class="fab fa-github"></i> Oranizations or <i class="fab fa-gitlab"></i> (Sub-)Groups.
 

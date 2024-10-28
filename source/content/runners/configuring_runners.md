@@ -7,6 +7,7 @@ Configuring self-hosted runners is a well-documented process with comprehensive 
   1. **Set Up Runners with Controlled Execution Environments**  
      - Use a Docker Executor in **GitLab**  
      - In **GitHub** simply use Docker containers in your jobs
+
      Benefits: **Reproducibility and reduced interference between jobs**
 
   2. **Secure Your Runner Adequately**  
