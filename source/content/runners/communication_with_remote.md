@@ -1,17 +1,18 @@
 ## Communication with Remote Service
 {% if slide %}
-**Communication Protocol**: Runners use **HTTP/HTTPS** to interact with remote services.
+**Communication Protocol**:
+- Runners use **HTTP/HTTPS** to interact with remote services.
 
-**Access Tokens**:
-- Provided as predefined variables by **GitHub** and **GitLab**.
-- Required for fetching protected resources.
+**Communication Mode**:
+- Runners initiate communication via **polling**.
 
 **Runner Capabilities**:
 - Can edit projects and repositories.
 - Interact with features like Issues and Merge/Pull Requests.
 
-**Communication Mode**:
-- Runners initiate communication via **polling**.
+**Access Tokens**:
+- Provided as predefined variables by **GitHub** and **GitLab**.
+- Required for fetching protected resources.
 
 **Network Accessibility**:
 - Outgoing connections are necessary.

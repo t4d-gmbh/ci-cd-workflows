@@ -23,7 +23,7 @@ Configuring self-hosted runners is a well-documented process with comprehensive 
      - Self-hosted runners can run on personal devices (laptops, workstations)  
 {% else %}
 The configuration process for self-hosted runners is well-documented for both **GitLab** and **GitHub**.
-You can find the relevant documentation here: [GitLab](https://docs.gitlab.com/runner/configuration/advanced-configuration.html) and [GitHub](https://docs.github.com/en/enterprise-cloud@latest/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
+You can find the relevant documentation here: [**GitLab**](https://docs.gitlab.com/runner/configuration/advanced-configuration.html) and [**GitHub**](https://docs.github.com/en/enterprise-cloud@latest/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners).
 The process is streamlined to facilitate easy setup.
 
 Both remote services offer a wide range of configuration options, and it is advisable to review these options only when you are actively configuring a self-hosted runner. 
@@ -54,6 +54,6 @@ This is particularly important when allowing to run:
    Monitor the performance of your runners and adjust the resources as necessary to prevent bottlenecks or failures during job execution.
 
 4. **Consider All Resources**
-   While it may seem obvious, if you are contemplating a switch to an automated setup, such as the GitLab Pipeline or GitHub Workflow, consider the resources you would have initially allocated for a self-hosted runner.
+   While it may seem obvious, if you are contemplating a switch to an automated setup, such as the **GitLab** Pipeline or **GitHub** Workflow, consider the resources you would have initially allocated for a self-hosted runner.
    A self-hosted runner does not have to be confined to a data center or hosted on AWS; your laptop or workstation can also effectively serve as a runner.
 {% endif %}
