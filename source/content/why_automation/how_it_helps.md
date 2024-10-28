@@ -1,4 +1,4 @@
-### How automation helps
+### How Automation Helps
 {% if build == "slides" %}
 <!-- BUILDING THE SLIDES -->
 ```{toctree}
