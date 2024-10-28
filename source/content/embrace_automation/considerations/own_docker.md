@@ -1,6 +1,4 @@
-## Some Considerations
-
-**Create your own Docker images**
+### Create your own Docker images
 
 **GitLab** and **GitHub** do not just use Docker extensively in they automation procedures, they also allow to easily creat and distribute your own Docker images.
 
