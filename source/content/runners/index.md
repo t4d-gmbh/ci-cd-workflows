@@ -9,11 +9,6 @@
 ./runner_types
 ./configuring_runners
 ./communication_with_remote
-./some_considerations
-./configuration
-./interaction
-./security
-./reproducibility
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
@@ -24,15 +19,5 @@
 ```{include} ./configuring_runners.md
 ```
 ```{include} ./communication_with_remote.md
-```
-```{include} ./some_considerations.md
-```
-```{include} ./configuration.md
-```
-```{include} ./interaction.md
-```
-```{include} ./security.md
-```
-```{include} ./reproducibility.md
 ```
 {% endif %}

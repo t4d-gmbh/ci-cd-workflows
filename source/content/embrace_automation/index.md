@@ -5,9 +5,11 @@
 ```{toctree}
 :maxdepth: 1
 
+
 ./how_to_trigger
 ./feature_branch_automated
 ./sensitive_data
+./some_considerations
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
@@ -16,5 +18,7 @@
 ```{include} ./feature_branch_automated.md
 ```
 ```{include} ./sensitive_data.md
+```
+```{include} ./some_considerations.md
 ```
 {% endif %}
