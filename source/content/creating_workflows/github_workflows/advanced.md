@@ -30,7 +30,10 @@ jobs:
 ```
 {% endraw %}
 :::
-:::{% endif %}
+:::
+{% else %}
+like {% raw %}`${{ github.event_name }}`{% endraw %}.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **On-the-Fly Variables**{% if page %}
 Variables can be generated as part of a Workflow (e.g., step or job outputs) can be referenced by other steps.
@@ -55,6 +58,8 @@ jobs:
 ```
 {% endraw %}
 :::
+{% else %}
+defined within a Workflow and referenced by other steps.
 {% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Expression Evaluation**{% if page %}:
@@ -73,7 +78,11 @@ jobs:
           echo $MESSAGE
 ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+in the {%raw%}`${{...}}`{%endraw%} syntax.
+
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Workflow Templates**{% if page %}:
 
@@ -99,7 +108,10 @@ Use **GitHub Secrets** to securely store sensitive information, like API keys or
           run: ssh -i ${{ secrets.SSH_PRIVATE_KEY }} user@server.com 'bash deploy.sh'
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+like {% raw %}`ssh -i ${{ secrets.SSH_PRIVATE_KEY }} user@server.com`{% endraw %}.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Creating Dependent Jobs**{% if page %}:
 
@@ -126,7 +138,10 @@ You can define job dependencies using the `needs` keyword, ensuring that jobs ru
         - run: echo "Deploying to production"
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+to ensure that jobs run in sequence.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using a Matrix**{% if page %}:
 
@@ -148,7 +163,10 @@ You can run a job multiple times with different configurations (e.g., testing ac
         - run: python --version
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+to run a job multiple times with different configurations.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Caching Dependencies**{% if page %}:
 
@@ -167,7 +185,10 @@ Speed up workflows by caching dependencies or files that are used across runs.
             key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+to speed up workflows.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Databases and Service Containers**{% if page %}:
 
@@ -192,7 +213,10 @@ If your workflow requires a service like a database, you can define service cont
         - run: psql --version
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+that will run alongside the job.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Labels (Targeting Runners)**{% if page %}:
 
@@ -206,7 +230,10 @@ You can specify which runners to use for a job based on the runner's labels (e.g
         - run: echo "Building project on a self-hosted runner"
   ```
 {%endraw%}
-:::{% endif %}
+:::
+{% else %}
+to use specific runners for a job (e.g., `self-hosted`, `ubuntu-latest`).
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Reusing Workflows**{% if page %}:
 
@@ -220,7 +247,10 @@ Use reusable workflows to call another workflow from within a workflow, reducing
         param1: value1
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+by calling another workflow from within a workflow.
+{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Environments**{% if page %}:
 
@@ -237,4 +267,7 @@ You can define **environments** with specific secrets and protection rules for d
         - run: echo "Deploying to production"
   ```
 {% endraw %}
-:::{% endif %}
+:::
+{% else %}
+with specific secrets and protection rules for different job stages.
+{% endif %}

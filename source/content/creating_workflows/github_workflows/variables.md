@@ -4,16 +4,20 @@
 
 Some important contextual variables are:
 
-- [**`github`**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context): Provides metadata about the Workflow run, Repository, and event that triggered the Workflow, etc.
-- [**`vars`**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context): Contains variables defined on Repository, Organization or Environment level.
-  These variables [can be set via the Web-UI](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#defining-variables-for-multiple-workflows).
+- [**`github`**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context): Provides metadata about the Workflow run, Repository, and event that triggered the Workflow, etc. 
+  - E.g. `github.event_name` for the name of the event that triggered the Workflow (e.g. `push`, `pull_request`, etc.) or `github.repository` for the name of the Repository.
+- [**`vars`**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context): Contains variables defined on Repository, Organization or Environment level. 
+  These variables [can be set via the Web-UI](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#defining-variables-for-multiple-workflows). 
+  - E.g. `vars.my_variable` for a variable named `my_variable`.
 :::{warning}
 :class: margin
 Sensitive data should be stored outside of **GitHub**!
 **`secrets` is the only half-way acceptable place to store sensitive data!**
 :::
 - [**`secrets`**](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#secrets-context): Names and values of secrets that were defined for the Repository, Organization or Environment.
-  Secrets are treated [in a particular way](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) by **GitHub** and can be set via the Web-UI.
+  Secrets are treated [in a particular way](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions) by **GitHub** and can be set via the Web-UI. 
+  - E.g. `secrets.TOKEN` for a secret named `TOKEN`.
+
 {% if page %}
 Refer to the official documentation for a [complete overview of **GitHub**'s contextual variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs) and [their availabilities](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#context-availability).
 
