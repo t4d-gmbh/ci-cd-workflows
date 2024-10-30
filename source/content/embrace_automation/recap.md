@@ -20,3 +20,10 @@ As you gain confidence, don't hesitate to iterate on your automation scripts to 
 However, always prioritize security; runners have access to your code and environment, making it essential to secure them properly.
 Store sensitive data in custom variables or the secrets context via the Web UI to ensure your project remains protected.
 {% endif %}
+
+:::{admonition} Playground Repository
+Use a private repository to experiment with automation scripts and workflows. 
+:::
+:::{tip} 
+Have a (private) template repository with a basic CI/CD setup ready to go for new projects.
+:::
