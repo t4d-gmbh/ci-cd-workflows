@@ -1,4 +1,4 @@
-## What are the Challenges
+## Challenges
 :::{card} Challenges
 1. **Initial Setup and Costs** 💰: High upfront investment and complexity in implementation{% if page %}.
    - **Training staff and integrating tools** with existing workflows can be demanding.
