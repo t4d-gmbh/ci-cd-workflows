@@ -1,8 +1,6 @@
 ## <i class="fab fa-github"></i> **GitHub** {octicon}`workflow` Workflows
 
-How to create an automation script in **GitHub**
-
-_Or at least how to get started..._
+How to create an automation script in **GitHub**? - _Or at least how to get started_...
 
 {% if build == "slides" %}
 <!-- BUILDING THE SLIDES -->
