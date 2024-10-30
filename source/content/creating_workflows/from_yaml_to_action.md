@@ -6,9 +6,6 @@ However, it may be unclear how the content in these YAML blueprints is transform
 
 In the [<i class="fas fa-person-running "></i> Runners <i class="fas fa-person-running fa-flip-horizontal"></i>](../runners/index.md) section, we’ll focus on the execution environments.
 Here, we provide a high-level overview of how remote services convert YAML configurations into actionable steps.
-{% else %}
-How is a YAML file turned into an automated workflow?
-{% endif %}
 
 1. **Syntax Parsing**: The remote service first checks the YAML syntax{% if page %} for any format errors to ensure the file can be processed{% endif %}.
 
@@ -34,3 +31,24 @@ How is a YAML file turned into an automated workflow?
    If configured, notifications are sent to relevant team members via email, messaging platforms, or through the remote service’s UI.{% endif %}
 
 9. **Retention and Cleanup**: {% if slide %}The remote service cleans up artifacts and logs periodically.{% else %}Artifacts and logs are retained according to the configured retention policy. After the retention period, the service automatically deletes these files to save storage space.{% endif %}
+
+{% endif %}
+
+{% if slide %}
+How is a YAML file turned into an automated workflow?
+:::{note}
+:class: tip, margin
+A **runner** is a machine or a process that executes the jobs defined in your pipeline. It can be a physical server, a virtual machine, or a container.
+:::
+:::{card}
+1. **Syntax Parsing**: Check for syntax errors.
+2. **Parsing and Validating Structure**: Validate the YAML structure.
+3. **Generating Execution Instructions**: Create a queue of jobs.
+4. **Runner Polling for Jobs**: Fetch jobs for execution.
+5. **Running on Runners**: Execute jobs in the specified environment.
+6. **Job Completion and Result Reporting**: Report job status.
+7. **Artifact and Log Collection**: Upload artifacts and logs.
+8. **Pipeline Status Update and Notifications**: Update pipeline status and notify team members.
+9. **Retention and Cleanup**: Manage artifacts and logs.
+:::
+{% endif %}
