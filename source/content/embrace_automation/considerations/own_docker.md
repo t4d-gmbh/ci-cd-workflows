@@ -1,6 +1,6 @@
 ### Create your own Docker images
 
-**GitLab** and **GitHub** do not just use Docker extensively in they automation procedures, they also allow to easily creat and distribute your own Docker images.
+**GitLab** and **GitHub** do not just use Docker extensively in they automation procedures, they also allow to easily create and distribute your own Docker images.
 
 In doing so, you will not just create isolated and reproducible environments for your project, but a custom Docker image will also drastically reduce the runtime of your automation scripts, as all installation and configuration of the environment can be carried out when creating the Docker image.
 
