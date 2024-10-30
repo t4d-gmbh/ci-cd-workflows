@@ -28,8 +28,5 @@ _Or at least how to get started..._
 ```
 ```{include} ./variables.md
 ```
----
-```{include} ./advanced.md
-```
 {% endif %}
 
