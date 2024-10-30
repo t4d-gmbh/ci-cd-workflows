@@ -19,7 +19,7 @@ Sensitive data should be stored outside of **GitLab**!
   These variables can be set via the Web-UI and can be used to store configuration values or secrets that your jobs need to access.
 {% if page %}
 
-An exemplary usage of a predefined variable:
+An exemplary use of a predefined variable:
 {% endif %}
 ```yaml
 myjob:
