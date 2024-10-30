@@ -1,8 +1,6 @@
 ## <i class="fab fa-gitlab"></i> **GitLab** {material-outlined}`account_tree` Pipelines
 
-How to create an automation script in **GitLab**
-
-_Or at least how to get started..._
+How to create an automation script in **GitLab** - _Or at least how to get started..._
 
 {% if build == "slides" %}
 <!-- BUILDING THE SLIDES -->
