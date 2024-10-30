@@ -5,16 +5,18 @@
 ```{toctree}
 :maxdepth: 1
 
-./how_to_trigger
+./recap
 ./feature_branch_automated
-./sensitive_data
+./considerations/index
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
-```{include} ./how_to_trigger.md
+```{include} ./recap.md
 ```
 ```{include} ./feature_branch_automated.md
 ```
-```{include} ./sensitive_data.md
+```{include} ./considerations/index.md
+```
+```{include} ./considerations/own_docker.md
 ```
 {% endif %}
