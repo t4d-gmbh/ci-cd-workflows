@@ -8,8 +8,6 @@ A **GitHub** Workflow must include at least the following elements (keys):
 **GitHub** provides [a comprehensive overview](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions) of all top-level keys and their purpose.
 :::
 {% endif %}
-:::::{grid}
-::::{grid-item-card}
 :::{card} [`on`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#on)
 Is a mandatory top-level key that **determines when to initiate the Workflow**{% if page %}, such as when pushing code, opening a pull request, or creating an issue{% endif %}.
 
@@ -58,7 +56,7 @@ jobs:
 A full list of keys a job accepts can be found [here](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobs).
 {% endif %}
 :::
-:::{card} [`steps`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+::::{card} [`steps`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 Is a mandatory key within a job.
 `steps` defines a list of **individual commands or actions to be executed** as part of a job.
 {% if page %}
@@ -74,20 +72,4 @@ The keys `run` and `uses` cannot be used together.
 - **`run`**: A string that will be run as a shell command.
 - **`uses`**: Specifies a pre-defined action to run. 
 {% endif %}
-:::
 ::::
-::::{grid-item-card} `.github/workflows/myworkflow.yml`
-```yaml
-name: My Workflow
-on: push
-jobs:
-  my-job:
-    name: My Job
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print a greeting
-        run: echo "Hello, World!"
-```
-::::
-
-:::::
