@@ -26,7 +26,4 @@ How to create an automation script in **GitHub**? - _Or at least how to get star
 ```
 ```{include} ./variables.md
 ```
----
-```{include} ./advanced.md
-```
 {% endif %}
