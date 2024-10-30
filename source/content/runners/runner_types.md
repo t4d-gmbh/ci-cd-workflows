@@ -15,7 +15,7 @@ A certain amount of minutes or particular runner sizes might be free of charge.
 Ideal for automation scripts that **do not work with sensitive data**.
 
 ```{note}
-Public Repostiries can use lightweight runners on **GitHub** without any runtime restriction.
+Public Repositories can use lightweight runners on **GitHub** without any runtime restriction.
 ```
 :::
 :::{card} Self-Hosted Runners <i class="fab fa-gitlab"></i>&<i class="fab fa-github"></i>

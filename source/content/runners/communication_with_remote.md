@@ -7,7 +7,7 @@
 - Runners initiate communication via **polling**.
 
 **Runner Capabilities**:
-- Can edit projects and repositories.
+- Can edit <i class="fab fa-gitlab"></i>Projects/<i class="fab fa-github"></i>Repositories.
 - Interact with features like Issues and Merge/Pull Requests.
 
 **Access Tokens**:
