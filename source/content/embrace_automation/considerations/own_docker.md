@@ -1,21 +1,21 @@
 ### Create your own Docker images
 
 {% if page %}
-**GitLab** and **GitHub** do not just use Docker extensively in they automation procedures, they also allow to easily create and distribute your own Docker images.
+Both **GitLab** and **GitHub** leverage dcker extensively in their automation processes, and they make it easy for you to do create and distribute your own Docker images.
 
-In doing so, you will not just create isolated and reproducible environments for your project, but a custom Docker image will also drastically reduce the runtime of your automation scripts, as all installation and configuration of the environment can be carried out when creating the Docker image.
+By creating custom Docker images, you not only establish isolated and reproducible environments for your projects but also drastically reduce the runtime of your automation scripts. This is because all installation and configuration of the environment can be completed during the image creation process.
 
 :::{tip}
-Head over to [furrer-lab/r-containers](https://github.com/furrer-lab/r-containers) so see a full fledged example for this approach.
+For a comprehensive example of this approach, check out [furrer-lab/r-containers](https://github.com/furrer-lab/r-containers).
 :::
 _Read more about creating Docker images on [<i class="fab fa-gitlab"></i> ](https://docs.gitlab.com/ee/user/packages/container_registry/build_and_push_images.html) and [<i class="fab fa-github"></i> ](https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images)_
 
 {% else %}
-- **Docker images** are a great way to create isolated and reproducible environments for your project.
-- **Custom Docker images** can drastically reduce the runtime of your automation scripts.
-    - **All installation and configuration** of the environment can be carried out when creating the Docker image.
-- **GitLab** and **GitHub** allow you to easily create and distribute your own Docker images.
+- **Docker images** are a great way to create isolated and reproducible environments for your projects.
+- **Custom Docker images** can significantly reduce the runtime of your automation scripts.
+    - **All installation and configuration** can be completed during the Docker image creation process.
+- **GitLab** and **GitHub** provide straightforward tools for creating and distributing your own Docker images.
 :::{tip}
-Check out [furrer-lab/r-containers](https://github.com/furrer-lab/r-containers) for a full-fledged example of this approach.
+For a detailed examle of this approach, check out [furrer-lab/r-containers](https://github.com/furrer-lab/r-containers).
 :::
 {% endif %}
