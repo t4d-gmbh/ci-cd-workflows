@@ -16,16 +16,16 @@ Each stage groups jobs that execute concurrently. Stages allow you to manage the
 
 Common stages include:
 
-- **build**: Compile code, build binaries, or prepare artifacts.
-- **test**: Run automated tests to ensure code quality.
-- **deploy**: Deploy your application to staging or production.
+- **Build**: Compile code, build binaries, or prepare artifacts.
+- **Test**: Run automated tests to ensure code quality.
+- **Deploy**: Deploy your application to staging or production.
 
-Jobs in the next stage start only after the previous stage has completed successfully. For more details on managing pipeline stages, refer to [GitLab's stages documentation](https://docs.gitlab.com/ee/ci/yaml/#stages).
+Jobs in the next stage start only after the previous stage is completed successfully. For more details on managing pipeline stages, refer to [GitLab's stages documentation](https://docs.gitlab.com/ee/ci/yaml/#stages).
 {% endif %}
 
 :::
 :::{card} [Jobs](https://docs.gitlab.com/ee/ci/yaml/#jobs)
-Defined as top-level keys with **arbitrary names**, jobs are the individual tasks that make up a GitLab CI/CD pipeline.
+are top-level keys with **arbitrary names**. Jobs are the individual tasks that make up a GitLab CI/CD pipeline.
 {% if page %}
 Jobs in GitLab run based on their assigned **stage** and can execute independently or sequentially within the pipeline.
 

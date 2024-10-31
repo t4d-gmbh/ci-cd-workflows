@@ -3,12 +3,12 @@
 {% if slide %}
 A YAML file that defines a <i class="fab fa-github"></i> Workflow must:
 
-- be under version control;
-- have a `.yml` or `.yaml` extension;
-- reside in the **`.github/workflows/`** folder;
+- Be under version control,
+- Have a `.yml` or `.yaml` extension;
+- Reside in the **`.github/workflows/`** folder,
 {% else %}Automation scripts for **GitHub** should be included in the <i class="fab fa-git"></i> repository and **must be located in the `.github/workflows/` directory**.{% endif %}
 {% if slide %}
-- can be arbitrarily named;
+- Can be arbitrarily named.
 
 :::{note}
 If multiple YAML files reside under `.github/workflows/`, **each one is treated as an individual Workflow**.

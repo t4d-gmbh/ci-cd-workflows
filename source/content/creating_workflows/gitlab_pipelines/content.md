@@ -9,7 +9,7 @@ A **GitLab** Pipeline must include at least the following elements:
 :::
 {% endif %}
 :::{card} [`stages`](https://docs.gitlab.com/ee/ci/yaml/#stages)
-A mandatory top-level key containing a list of strings, that identify the sequence of stages the Pipeline will sequentially run through.
+is mandatory top-level key containing a list of strings that identify the sequence of stages the Pipeline will sequentially run through.
 
 Stages are processed sequentially and **define the order of job execution** in a **GitLab** Pipeline{% if page %}, helping to organize the workflow from start to finish{% endif %}.
 
@@ -20,19 +20,18 @@ Stages allow you to manage the flow of your Pipeline, ensuring each step complet
 
 You can choose the name of a stage freely, but some typical names are:
 
-- **build**: Compile code, build binaries, or prepare artifacts.
-- **test**: Run automated tests to ensure code quality.
-- **deploy**: Deploy your application to staging or production.
+- "build": Compile code, build binaries, or prepare artifacts.
+- "test": Run automated tests to ensure code quality.
+- "deploy": Deploy your application to staging or production.
 
-Jobs in the next stage start only after the previous stage has completed successfully.
+Jobs in the next stage will only start once the previous stage has successfully been completed.
 For more details on managing `stages`, refer to [GitLab's stages documentation](https://docs.gitlab.com/ee/ci/yaml/#stages).
 {% endif %}
 
 :::
 :::{card} [`<job_name>`](https://docs.gitlab.com/ee/ci/yaml/#jobs)
-**GitLab** identifies arbitrary top-level keys as a job, if they containt the key `script`.
+are top-level keys with **arbitrary names**. Jobs are the individual elements that make up a GitLab CI/CD pipeline.
 
-Defined as top-level keys with **arbitrary names**, jobs are the individual tasks that make up a GitLab CI/CD pipeline.
 {% if page %}
 Jobs in GitLab run based on their assigned **stage** and can execute independently or sequentially within the pipeline.
 
@@ -55,7 +54,7 @@ In the future the [`run`](https://docs.gitlab.com/ee/ci/yaml/#run) key might bec
 :::
 {% endif %}
 :::{card} [`script`](https://docs.gitlab.com/ee/ci/yaml/index.html#script)
-Is a mandatory key within a job.
+is a mandatory key within a job.
 
 `script` defines **a list of shell commands** that will be run sequentially when the job is executed.
 

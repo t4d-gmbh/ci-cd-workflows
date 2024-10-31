@@ -26,16 +26,16 @@ In **GitLab**, [Pipelines can be triggered by various events](https://docs.gitla
 
 To define rules for the entire Pipeline, they must be placed under the `rules` key within the top-level key `workflow`.
 
-An example rule to trigger a Pipeline on a Merge Request would look like this:
+For instance, a rule to trigger a Pipeline on a Merge Request could look like this:
 ```yaml
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
 ```
 
-For individual jobs, the `rules` keyword can also be utilized to specify whether an event should trigger that particular job.
+For individual jobs, the `rules` keyword can specify whether an event should trigger a particular job.
 
-An example rule to trigger a job on a Merge Request would look like this:
+For example, a rule to trigger a job on a Merge Request could look like this:
 ```yaml
 job1:
   script:

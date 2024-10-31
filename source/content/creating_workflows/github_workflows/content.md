@@ -9,7 +9,7 @@ A **GitHub** Workflow must include at least the following elements (keys):
 :::
 {% endif %}
 :::{card} [`on`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#on)
-Is a mandatory top-level key that **determines when to initiate the Workflow**{% if page %}, such as when pushing code, opening a pull request, or creating an issue{% endif %}.
+is a mandatory top-level key that **determines when to initiate the Workflow**{% if page %}, such as when pushing code, opening a pull request, or creating an issue{% endif %}.
 
 {% if page %}
 
@@ -25,7 +25,7 @@ We recommend to [read about triggering events](https://docs.github.com/en/action
 
 :::
 :::{card} [`jobs`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobs)
-Is a top-level key that holds a dictionary of jobs, each **specify an environment along with a sequence of `tasks`** to perform.
+is a top-level key that holds a dictionary of jobs, each **specify an environment along with a sequence of `tasks`** to perform.
 {% if page %}
 Jobs can be arbitrarily named (i.e. the key an be set freely).
 They will run in parallel by default and each job can contain a collection of `steps` that are executed sequentially.
@@ -57,7 +57,7 @@ A full list of keys a job accepts can be found [here](https://docs.github.com/en
 {% endif %}
 :::
 ::::{card} [`steps`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
-Is a mandatory key within a job.
+is a mandatory key within a job.
 `steps` defines a list of **individual commands or actions to be executed** as part of a job.
 {% if page %}
 Steps can either run shell commands or use [pre-built GitHub Actions](https://docs.github.com/en/actions/sharing-automations/creating-actions/about-custom-actions) to perform specific tasks.

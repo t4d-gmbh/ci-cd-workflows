@@ -9,7 +9,7 @@
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
-### some sub title
+
 ```{include} ./problem.md
 ```
 {% endif %}

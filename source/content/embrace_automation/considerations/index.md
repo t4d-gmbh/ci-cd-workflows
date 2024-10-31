@@ -10,9 +10,6 @@
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
-```{include} ./own_docker.md
-```
-```{include} ./debugging.md
-```
+
 {% endif %}
 
