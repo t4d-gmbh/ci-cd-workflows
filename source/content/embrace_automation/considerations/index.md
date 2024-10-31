@@ -5,6 +5,7 @@
 ```{toctree}
 :maxdepth: 1
 
+./start_small
 ./own_docker
 ./debugging
 ```

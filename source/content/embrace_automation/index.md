@@ -17,6 +17,8 @@
 ```
 ```{include} ./considerations/index.md
 ```
+```{include} ./considerations/start_small.md
+```
 ```{include} ./considerations/own_docker.md
 ```
 ```{include} ./considerations/debugging.md

@@ -1,7 +1,7 @@
 ### Create your own Docker images
 
 {% if page %}
-Both **GitLab** and **GitHub** leverage dcker extensively in their automation processes, and they make it easy for you to do create and distribute your own Docker images.
+Both **GitLab** and **GitHub** leverage Docker extensively in their automation processes, and they make it easy for you to do create and distribute your own Docker images.
 
 By creating custom Docker images, you not only establish isolated and reproducible environments for your projects but also drastically reduce the runtime of your automation scripts. This is because all installation and configuration of the environment can be completed during the image creation process.
 
@@ -16,6 +16,6 @@ _Read more about creating Docker images on [<i class="fab fa-gitlab"></i> ](http
     - **All installation and configuration** can be completed during the Docker image creation process.
 - **GitLab** and **GitHub** provide straightforward tools for creating and distributing your own Docker images.
 :::{tip}
-For a detailed examle of this approach, check out [furrer-lab/r-containers](https://github.com/furrer-lab/r-containers).
+For a full-fledged example of this approach, check out [furrer-lab/r-containers](https://github.com/furrer-lab/r-containers).
 :::
 {% endif %}
