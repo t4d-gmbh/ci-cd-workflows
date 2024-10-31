@@ -1,3 +1,4 @@
+
 ## Navigating the Challenges of Automation
 :::{card} Challenges
 1. **Initial Setup and Costs** 💰: High upfront investment and complexity in implementation{% if page %}.
