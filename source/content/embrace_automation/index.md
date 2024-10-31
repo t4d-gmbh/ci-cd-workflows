@@ -19,4 +19,6 @@
 ```
 ```{include} ./considerations/own_docker.md
 ```
+```{include} ./considerations/debugging.md
+```
 {% endif %}
