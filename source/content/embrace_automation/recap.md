@@ -1,15 +1,16 @@
 ## Recap
 
 {% if slide %}
-- All you need is ...❤️? **A YAML file** 😉
+- All you need is ...❤️? **A YAML file!** 😉
 - **Start small** with simple automation scripts.
-- Define **when to trigger** an automation script.
-- Use **remote hosted runners** when working with non-sensitive data.
-- It is straight forward to **configure your own runner**.
-- Configure you automation scripts to **use Docker containers**.
-- Be aware of **security implications a runner has**.
-- If at all, **store sensitive data in custom variables or the `secrets` context** via the Web-UI only!
+- Define **trigger conditions** for your automation script.
+- Use **remote hosted runners** for non-sensitive data.
+- Easily **configure your own runner** to suit your needs.
+- Set up your automation scripts to leverage **Docker containers**.
+- Be mindful of the **security implications** associated with runners.
+- If necessary, **only store sensitive data in custom variables or the `secrets` context** via the Web-UI only!
 {% else %}
+
 Getting started with CI/CD is easier than it sounds—really, all you need is ❤️... well, a YAML file 😉.
 Begin with small, simple automation scripts to familiarize yourself with CI/CD basics, such as automating tests or compiling code.
 Setting clear trigger points for these scripts, like on code pushes or pull requests, will help manage when your workflows run.
