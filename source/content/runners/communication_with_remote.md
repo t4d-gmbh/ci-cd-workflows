@@ -1,10 +1,8 @@
 ## Communication with Remote Service
 {% if slide %}
-**Communication Protocol**:
-- Runners use **HTTP/HTTPS** to interact with remote services.
+**Communication Protocol**: Runners use **HTTP/HTTPS** to interact with remote services.
 
-**Communication Mode**:
-- Runners initiate communication via **polling**.
+**Communication Mode**: Runners initiate communication via **polling**.
 
 **Runner Capabilities**:
 - Can edit <i class="fab fa-gitlab"></i>Projects/<i class="fab fa-github"></i>Repositories.
