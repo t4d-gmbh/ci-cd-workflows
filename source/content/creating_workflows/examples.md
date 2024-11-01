@@ -1,6 +1,6 @@
 ## <i class="fab fa-github"></i> Workflows vs. <i class="fab fa-gitlab"></i> Pipelines - by Example
 ::::{grid}
-:::{grid-item-card} News Feed
+:::{grid-item-card} <i class="fab fa-github"></i>
 ```yaml
 # .github/workflows/hello_world.yml
 
@@ -12,7 +12,7 @@ jobs:
       - run: echo "Hello, World!"
 ```
 :::
-:::{grid-item-card} <i class="fab fa-git"></i> History
+:::{grid-item-card} <i class="fab fa-gitlab"></i>
 ```yaml
 # .gitlab-ci.yml
 
