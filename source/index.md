@@ -23,6 +23,7 @@ Barbara Mejia
 ### Editors
 
 **Barbara Mejia**  
+{% endif %}
 
 
 ### Content
