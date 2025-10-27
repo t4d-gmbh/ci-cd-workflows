@@ -17,7 +17,7 @@ To help you get started, here are some suggestions:
 {% if slide %}- **{% else %}#### {% endif %}Test the development branch{% if slide %}**{% endif %}
 {% if page %}
 
-You can setup tests to be triggered on all branches except the `main` branch or for any push event to a branch with an open Merge/Pull Request.
+You can set up tests to be triggered on all branches except the `main` branch or for any push event to a branch with an open Merge/Pull Request.
 By doing this, you can ensure that issues in the development branch are spotted early on.
 
 {% endif %}
@@ -37,7 +37,7 @@ You can configure your automation script performing the tests to also report cha
 {% if slide %}- **{% else %}#### {% endif %}Test an anticipated merge commit{% if slide %}**{% endif %}
 {% if page %}
 
-When a Merge/Pull Request is no longer a draft, you can run an automation script that performs a merge (without committing it) of the feature branch, tests an reports the results.
+When a Merge/Pull Request is no longer a draft, you can run an automation script that performs a merge (without committing it) of the feature branch, tests and reports the results.
 
 This ensures that the merged code passes all tests before final integration.
 Allow merging only if this test succeeds.
@@ -70,7 +70,7 @@ merge_and_test:
 {% if slide %}- **{% else %}#### {% endif %}Perform a version increase upon merge{% if slide %}**{% endif %}
 {% if page %}
 
-You can setup a process that automatically creates a new <i class="fab fa-git"></i> tag as soon as a feature branch is merged.
+You can set up a process that automatically creates a new <i class="fab fa-git"></i> tag as soon as a feature branch is merged.
 This process might fetch the latest tag, increment its minor version number by 1, and push a new tag. Alternatively, you can use existing tools, such as [semantic-release](https://github.com/semantic-release/semantic-release) for **GitHub** to perform this task automatically for you.
 
 {% endif %}
@@ -84,7 +84,7 @@ This is also a relatively easy automation task to start with!
 {% endif %}
 {% if slide %}- **{% else %}#### {% endif %}Automate deployment to production or staging environment{% if slide %}**{% endif %}
 {% if page %}
-If you are working on a project that can be deployed, like a static website in [**GitHub**-](https://pages.github.com/) or [**GitLab**- pages](https://docs.gitlab.com/ee/user/project/pages/), you can setup a deployment script that runs on every update (i.e., `push`) to your healthy reference.
+If you are working on a project that can be deployed, like a static website in [**GitHub**-](https://pages.github.com/) or [**GitLab**- pages](https://docs.gitlab.com/ee/user/project/pages/), you can set up a deployment script that runs on every update (i.e., `push`) to your healthy reference.
 
 ```{note}
 The very content you are watching right now is depolyed in this manner!

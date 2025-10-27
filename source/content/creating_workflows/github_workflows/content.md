@@ -15,7 +15,7 @@ is a mandatory top-level key that **determines when to initiate the Workflow**{%
 
 Workflows in **GitHub** can be triggered by:
 
-- **Repository events**: Like  commits, pull requests, or issue creation, e.g. `on: create` or `on: [push, fork]`.
+- **Repository events**: Like commits, pull requests, or issue creation, e.g. `on: create` or `on: [push, fork]`.
 - **External events**: Webhooks or APIs that signal **GitHub** to start a Workflow.
 - **Scheduled times**: Set Workflows to run at regular intervals (e.g., nightly builds using cron syntax).
 - **Manual triggers**: Start a Workflow manually from the GitHub UI.
@@ -27,7 +27,7 @@ We recommend to [read about triggering events](https://docs.github.com/en/action
 :::{card} [`jobs`](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobs)
 is a top-level key that holds a dictionary of jobs, each **specify an environment along with a sequence of `tasks`** to perform.
 {% if page %}
-Jobs can be arbitrarily named (i.e. the key an be set freely).
+Jobs can be arbitrarily named (i.e. the key can be set freely).
 They will run in parallel by default and each job can contain a collection of `steps` that are executed sequentially.
 
 Some of the more relevant keys a job might contain:

@@ -13,7 +13,7 @@ workflow:
 ```
 In fact, with `workflow` you can control more than just when the Pipeline should be, for example also when it should be canceled. 
 
-_Read more about [controlling the Pipeline behaviour with `workflow`](https://docs.gitlab.com/ee/ci/yaml/workflow.html)._
+_Read more about [controlling the Pipeline behavior with `workflow`](https://docs.gitlab.com/ee/ci/yaml/workflow.html)._
 :::{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using Variables**{% if page %}:
@@ -41,12 +41,12 @@ job2:
     - echo "Variables '$GLOBAL_VAR' and '$SOME_VAR'"  # SOME_VAR will be ''
 ```
 
-In addition you can [set variables in the UI](https://docs.gitlab.com/ee/ci/variables/#define-a-cicd-variable-in-the-ui), which is **the recommended approach to store sensitive information**, like access tokens or password.
+In addition, you can [set variables in the UI](https://docs.gitlab.com/ee/ci/variables/#define-a-cicd-variable-in-the-ui), which is **the recommended approach to store sensitive information**, like access tokens or password.
 :::{% endif %}
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Using `before_script` and `after_script`**{% if page %}:
 
-You can define commands that run before or after the main `script` commands even if the `scirpt` command fails or times out.
+You can define commands that run before or after the main `script` commands even if the `script` command fails or times out.
 
 ```yaml
 
@@ -64,7 +64,7 @@ _Read more about [before_script](https://docs.gitlab.com/ee/ci/yaml/#before_scri
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Setting Defaults**{% if page %}:
 
-The [top-level key `default`](https://docs.gitlab.com/ee/ci/yaml/#default) can be used to set values and behaviours that will apply to all jobs, unless overwritten directly.
+The [top-level key `default`](https://docs.gitlab.com/ee/ci/yaml/#default) can be used to set values and behaviors that will apply to all jobs, unless overwritten directly.
 
 Some Candidates for defaults are:
 

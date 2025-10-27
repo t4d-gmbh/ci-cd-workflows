@@ -28,7 +28,7 @@ script:
 {% if page %}
 - This functionality is a custom tool of **GitHub** and not to be confused with templating languages like [Jinja](https://jinja.palletsprojects.com/en/stable/).
 - You will use this syntax to access predefined namespaces - or contexts in the **GitHub** lingo - like the `secrets` context which can hold secrets that were set for the Organization, or Repository via the Web-UI.
-- **GitHub** provides a set of [custom functions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions#functions) can can be evaluated within a {%raw%}`${{...}}`{%endraw%} clause.
+- **GitHub** provides a set of [custom functions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions#functions) can be evaluated within a {%raw%}`${{...}}`{%endraw%} clause.
 :::{admonition} Example
 :class: tip
 {%raw%}

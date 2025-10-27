@@ -19,7 +19,7 @@ Public Repositories can use lightweight runners on **GitHub** without any runtim
 ```
 :::
 :::{card} Self-Hosted Runners <i class="fab fa-gitlab"></i>&<i class="fab fa-github"></i>
-Self-hosted runners are  virtual or physical machines **configured by the user** and registered with the remote service.
+Self-hosted runners are virtual or physical machines **configured by the user** and registered with the remote service.
 
 These runners can operate as a service and may be dedicated to specific <i class="fab fa-gitlab"></i> Projects or <i class="fab fa-github"></i> Repositories, or shared accross <i class="fab fa-github"></i> Organizations or <i class="fab fa-gitlab"></i> (Sub-)Groups.
 

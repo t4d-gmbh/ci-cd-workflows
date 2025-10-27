@@ -18,7 +18,7 @@ A self-hosted runner can be configured to securely access secrets and sensitive 
 - **Configuration**: Ensure the runner has the necessary permissions to access the secrets management tool and is configured to operate within the protected network.
 
 #### 4. Environment Variables
-- **Usage**: Configure the self-hosted runner to use environment variables to store access credentials for the secrets management tool.
+- **Usage**: Configure the self-hosted runner to use environment variables to store access credentials for the secrets' management tool.
 - **Example**: 
   - `VAULT_ADDR` for HashiCorp Vault URL.
   - `VAULT_TOKEN` for authentication.
@@ -26,7 +26,7 @@ A self-hosted runner can be configured to securely access secrets and sensitive 
 #### 5. CI/CD Pipeline Configuration
 - **Trigger**: When a job is executed on the self-hosted runner.
 - **Action**:
-  - Use scripts or plugins to authenticate with the secrets management tool.
+  - Use scripts or plugins to authenticate with the secrets' management tool.
   - Retrieve the required secrets and store them in environment variables for the duration of the job.
 
 #### 6. Access Control
@@ -43,7 +43,7 @@ A self-hosted runner can be configured to securely access secrets and sensitive 
    - The runner authenticates with the secrets management tool using stored environment variables.
 
 3. **Retrieve Secrets**:
-   - The runner fetches the necessary secrets for the job (e.g., database credentials, API keys) from the secrets management tool, which is also accessible within the protected environment.
+   - The runner fetches the necessary secrets for the job (e.g., database credentials, API keys) from the secrets' management tool, which is also accessible within the protected environment.
 
 4. **Run Job**:
    - The job executes with the retrieved secrets, ensuring that sensitive data is not hard-coded in the codebase and remains within the secure environment.
@@ -60,4 +60,4 @@ When configuring CI/CD pipelines to trigger on merge or pull requests, be cautio
 :::
 
 ### Summary
-By integrating a self-hosted runner within a protected environment and using a secrets management tool, teams can securely access and manage sensitive data during CI/CD processes. This approach enhances security by limiting exposure to external threats and ensuring that sensitive information is only accessible within a controlled network.
+By integrating a self-hosted runner within a protected environment and using a secrets' management tool, teams can securely access and manage sensitive data during CI/CD processes. This approach enhances security by limiting exposure to external threats and ensuring that sensitive information is only accessible within a controlled network.

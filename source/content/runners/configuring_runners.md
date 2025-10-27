@@ -1,7 +1,7 @@
 ## Configuring Runners
 
 {% if slide %}
-Configuring self-hosted runners is a well-documented process, with comprehensive guides for **GitLab** and **GitHub**  
+Configuring self-hosted runners is a well-documented process, with comprehensive guides for **GitLab** and **GitHub**.
 
 **Important Considerations**  
   1. **Set Up Runners with Controlled Execution Environments**  
@@ -16,7 +16,7 @@ Configuring self-hosted runners is a well-documented process, with comprehensive
 
   3. **Provide Sufficient Resources**  
      - Ensure adequate CPU, memory, and disk space.  
-     - Monitor performance to prevent bottlenecks  .
+     - Monitor performance to prevent bottlenecks.
 
   4. **Consider All Resources**  
      - Evaluate the resources required for your automated setups.

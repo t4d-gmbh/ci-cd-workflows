@@ -13,7 +13,7 @@ When using runners in **GitLab** and **GitHub**, it's essential to consider vari
 
 ### 2. Access Control
 
-- **Limit Permissions**: Ensure that runners have the minimum permissions necessary to perform their tasks. Use least privilege principles.
+- **Limit Permissions**: Ensure that runners have the minimum permissions necessary to perform their tasks. Use the least privilege principles.
 - **Environment Variables**: Be cautious with sensitive information in environment variables. Use secrets management features provided by both platforms.
 
 ### 3. Isolation

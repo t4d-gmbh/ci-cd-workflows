@@ -7,7 +7,7 @@ As the name suggests, context variables hold contextual information and vary sig
 Some important contextual variables are:
 
 - **`github`**: Provides metadata about the Workflow run, repository, and event that triggered the workflow.
-- **`vars`**: Contains variables definded on Repository, Organization or Environment level.
+- **`vars`**: Contains variables defined on Repository, Organization or Environment level.
 - **`secrets`**: Names and values of available secrets.
 
 Refer to the official documentation for a [complete overview of **GitHub**'s contextual variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs) and [their availabilities](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#context-availability).
@@ -64,7 +64,7 @@ defined within a Workflow and referenced by other steps.
 
 {% if slide %}- {% else %}:::{card}{% endif %} **Expression Evaluation**{% if page %}:
 
-**GitHub** allows to [evaluate expressions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions) in the {%raw%}`${{...}}`{%endraw%} syntax.
+**GitHub** allows [evaluating expressions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions) in the {%raw%}`${{...}}`{%endraw%} syntax.
 
 {% raw %}
 ```yaml
