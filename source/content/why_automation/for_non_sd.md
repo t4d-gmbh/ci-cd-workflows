@@ -49,14 +49,14 @@ Here are some key benefits:
 {% endif %}
 
 8. **Scalability** 📈: Manages complex workflows and large datasets effectively{% if page %}, supporting project growth.
-   - Automation helps **managing complex workflows** that arise as projects grow in size and complexity.
+   - Automation helps to **manage complex workflows** that arise as projects grow in size and complexity.
    - Facilitate collaboration among *larger teams* by automating processes that would otherwise require manual coordination.
    - Easily **adapt to new demands** like increased workloads or new project requirements.
 {% endif %}
 
 9. **Quality Assurance** 🔍: Maintains high quality{% if page %} through continuous monitoring and automated checks for errors.
    - **Continuous quality checks** to maintain high-quality standards throughout the project lifecycle.
-   - Automated tools **identify errors** and allow to correct document, data, and analysis errors before finalization.
+   - Automated tools **identify errors** and allow correcting document, data, and analysis errors before finalization.
    - **Standardized review processes** ensure that all outputs meet established quality criteria.{% endif %}
 :::
 
