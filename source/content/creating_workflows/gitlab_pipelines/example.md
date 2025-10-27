@@ -1,4 +1,4 @@
-### Minimal Automation Script
+### A Minimal Example
 
 {% if page %}An minimal exemplary <i class="fab fa-gitlab"></i> Pipeline file could look like this:{% endif %}
 

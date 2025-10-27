@@ -1,4 +1,4 @@
-### Minimal Content of an Automation Script
+### Minimal Content
 
 A **GitLab** Pipeline must include at least the following elements:
 

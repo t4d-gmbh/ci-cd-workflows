@@ -1,4 +1,4 @@
-### How to Trigger an Automation Script
+### How to Trigger Pipelines
 {% if slide %}
 - **Triggering Pipelines:**
   - Pipelines can be triggered by various events.

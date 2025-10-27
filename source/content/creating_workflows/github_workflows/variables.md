@@ -1,4 +1,4 @@
-### How to Define Variables for an Automation Script
+### How to Define Variables
 
 **GitHub** allows the use of variables in Workflows definitions and provides a variety of [context variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs) that can be accessed using the {%raw%}`${{...}}`{%endraw%} syntax.
 

@@ -1,4 +1,4 @@
-### How to Define Variables for an Automation Script
+### How to Define Variables
 
 **GitLab** allows the use of variables in the definition of Pipelines and provides a variety of [predefined variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html).
 

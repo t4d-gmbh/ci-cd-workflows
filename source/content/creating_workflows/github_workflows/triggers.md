@@ -1,4 +1,4 @@
-### How to Trigger an Automation Script
+### How to Trigger Workflows
 {% if slide %}
 - **Event Triggers:**
   - A variety of events can trigger a Workflow in **GitHub**.
