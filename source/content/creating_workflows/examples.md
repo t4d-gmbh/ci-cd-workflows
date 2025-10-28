@@ -19,7 +19,7 @@ jobs:
 stages:
   - greet
 
-greet_job:
+say_hello:
   stage: greet
   script:
     - echo "Hello, World!"
