@@ -6,6 +6,10 @@ Self-hosted **GitLab** instances can provide their own "Remote Hosted Runners"{%
 
 _Read more about [Instance Runners](https://docs.gitlab.com/ee/ci/runners/runners_scope.html#instance-runners)_{% endif %}.
 :::
+:::{admonition} Public Repositories <i class="fab fa-github"></i>
+:class: note, margin
+Public Repositories can use lightweight runners on **GitHub** without any runtime restriction.
+:::
 {% if slide %}
 :::{card} Remote Hosted Runners <i class="fab fa-gitlab"></i>&<i class="fab fa-github"></i>
 Remote Hosted Runners are provided and maintained by the remote service.
@@ -14,9 +18,6 @@ A certain amount of runtime minutes or specific runner sizes may be offered free
 
 These runners are ideal for automation scripts that **do not handle sensitive data**.
 
-```{note}
-Public Repositories can use lightweight runners on **GitHub** without any runtime restriction.
-```
 :::
 :::{card} Self-Hosted Runners <i class="fab fa-gitlab"></i>&<i class="fab fa-github"></i>
 Self-hosted runners are virtual or physical machines **configured by the user** and registered with the remote service.
