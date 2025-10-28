@@ -1,7 +1,7 @@
 ## Recap: Weekend Out Exercise
 
 {% if page %}
-Let's revisit last week's **Weekend Out** exercise to deepen our understanding of <i class="fab fa-github"></i> **GitHub** workflows in practice.
+Let's revisit last week's [**Weekend Out**](https://github.com/t4d-gmbh/Weekend-Out) exercise to deepen our understanding of <i class="fab fa-github"></i> **GitHub** workflows in practice.
 
 {% endif %}
 
