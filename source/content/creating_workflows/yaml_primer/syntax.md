@@ -44,8 +44,8 @@ Here are some key elements of YAML syntax:
 :::{admonition} Abbreviated forms
 :class: note, margin
 Lists and Dictionaries can be condensed:
-- `start = ["a", "b"]`
-- `user = {name: John, job: Developer}`
+- `start: ["a", "b"]`
+- `user: {name: John, job: Developer}`
 :::
 {% if slide %}::::{grid}
 :::{grid-item-card}{% else %}#### 2.{% endif %} Lists
