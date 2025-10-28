@@ -1,5 +1,5 @@
+## The Challenges of Automation
 
-## Navigating the Challenges of Automation
 :::{card} Challenges
 1. **Initial Setup and Costs** 💰: High upfront investment and complexity in implementation{% if page %}.
    - **Training staff and integrating tools** with existing workflows can be demanding.
