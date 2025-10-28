@@ -26,5 +26,7 @@ How to create an automation script in **GitLab** - _Or at least how to get start
 ```
 ```{include} ./variables.md
 ```
+```{include} ./advanced.md
+```
 {% endif %}
 
