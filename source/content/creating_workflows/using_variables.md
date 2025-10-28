@@ -19,7 +19,7 @@ The general approach consist of first substituting all `$<variable>` terms by th
 :class: tip
 ```yaml
 script:
-  - BRANCH=$CI_COMMIT_BRANCH
+  - branch=$CI_COMMIT_BRANCH
 ```
 ::::
 ::::{note}
