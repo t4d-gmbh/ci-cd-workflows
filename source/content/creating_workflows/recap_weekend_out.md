@@ -3,9 +3,11 @@
 {% if page %}
 Let's revisit last week's [**Weekend Out**](https://github.com/t4d-gmbh/Weekend-Out) exercise to deepen our understanding of <i class="fab fa-github"></i> **GitHub** workflows in practice.
 
+### What Actually Happened?
+{% else %}
+**What Actually Happened?**
 {% endif %}
 
-### What Actually Happened?
 
 Think back to the exercise where multiple people (you, Alice, Bob, and Carol) were collaborating on a packing list. 
 Some unexpected things happened automatically - let's understand why!
