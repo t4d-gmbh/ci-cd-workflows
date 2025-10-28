@@ -9,6 +9,7 @@ Both <i class="fab fa-github"></i> **GitHub** and <i class="fab fa-gitlab"></i> 
 ./using_variables
 ./from_yaml_to_action
 ./github_workflows/index
+./recap_weekend_out
 ./gitlab_pipelines/index
 ./overview
 ./examples
