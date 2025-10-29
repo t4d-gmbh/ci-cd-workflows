@@ -21,6 +21,6 @@ We start with <i class="fab fa-gitlab"></i> Pipelines, so head over to the <i cl
 
 **Homework:**
 
-To get you up and running with automation on both mayor platform, a very similar template using <i class="fab fa-github"></i> Workflows is available on GitHub.
+To get you up and running with automation on both major platform, a very similar template using <i class="fab fa-github"></i> Workflows is available on GitHub.
 As homework, go to the <i class="fab fa-github"></i> [LaTeX Article Template](https://github.com/matteodelucchi/latex-article-template) Repository and follow the instructions in the `README.md`.
 <i class="fab fa-github"></i> Workflows vs. <i class="fab fa-gitlab"></i> Pipelines
